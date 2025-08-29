@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <blockquote>
+            <lightning-input label="Enter Message" lwc:ref="message" required></lightning-input>
+            <lightning-input label="Enter Label" lwc:ref="label"></lightning-input>
+            <lightning-combobox label="Select Variant" options={variantOptions}
+                onchange={handleVariantSelection}></lightning-combobox>
+            <lightning-combobox label="Select Theme" options={themeOptions}
+                onchange={handleThemeSelection}></lightning-combobox>
+            <lightning-button label="Result Viewer" onclick={buttonHandler}></lightning-button>
+        </blockquote>
+
+       
+    </lightning-card>
+</template>

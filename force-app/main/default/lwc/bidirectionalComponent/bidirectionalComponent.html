@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <blockquote>
+            <lightning-input type="toggle" message-toggle-active="Right To Left"
+                message-toggle-inactive="Left To Right" onchange={toggleChangeHandler}></lightning-input>
+            <br />
+            <lightning-input type="text" label="Enter Text" onchange={textChangeHandler}></lightning-input>
+            <br />
+            <p>Text in Right To left : <bdo dir={directionOfText}>{changedText}</bdo></p>
+
+        </blockquote>
+    </lightning-card>
+</template>

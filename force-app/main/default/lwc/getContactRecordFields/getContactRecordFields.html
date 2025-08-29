@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Get Record LDS Using Layout">
+        <blockquote>
+            <lightning-input label="Record Id" onchange={captureRecordId}> </lightning-input>
+            <template lwc:if={data}>
+                <div class="container">
+                    <p class="banner">Result</p>
+                    <p>Name :  {data.Name}</p>
+                    <p>Industry : {data.Industry}</p>
+
+                </div>
+            </template>
+        </blockquote>
+    </lightning-card>
+</template>

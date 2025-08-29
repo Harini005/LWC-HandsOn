@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <blockquote>
+            <div class="container">
+                <lightning-input type="number" name="number1" onchange={captureInput}></lightning-input>
+                <lightning-input type="number" name="number2" onchange={captureInput}></lightning-input>
+            </div>
+            <div class="buttons">
+                <lightning-button label="+" onclick={manipulateData}></lightning-button>
+                <lightning-button label="-" onclick={manipulateData}></lightning-button>
+                <lightning-button label="*" onclick={manipulateData}></lightning-button>
+                <lightning-button label="/" onclick={manipulateData}></lightning-button>
+            </div>
+            <c-display-result display-message={finalResult}></c-display-result>
+        </blockquote>
+    </lightning-card>
+</template>
