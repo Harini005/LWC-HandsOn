@@ -19,6 +19,7 @@ export default class GetPicklistValueComp extends LightningElement {
         clearTimeout(this.timeoutValue);
         this.timeoutValue = setTimeout(() => {
             if (data) {
+                this.fieldApiName = [];
                 this.recordTypeId = data.defaultRecordTypeId;
                 for (let field in data.fields) {
                     if (data.fields[field].dataType == PICKLIST) {
@@ -63,7 +64,7 @@ export default class GetPicklistValueComp extends LightningElement {
         });
         this.showValues = true;
         console.log(this.values);
-
+        
     }
 
 }

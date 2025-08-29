@@ -4,8 +4,7 @@
         <blockquote>
             <lightning-input label="Object Name" onchange={captureObjectName}></lightning-input>
             <template lwc:if={showCombobox}>
-                <lightning-combobox options={fieldApiName} label="Picklist Fields"
-                    onchange={picklistHandler}></lightning-combobox>
+                <lightning-combobox options={fieldApiName} label="Picklist Fields" onchange={picklistHandler}></lightning-combobox>
             </template>
             <template lwc:if={showValues}>
                 <div class="container">
