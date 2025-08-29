@@ -1,0 +1,23 @@
+.container{
+    border : 2px solid gray;
+    margin : 10px auto;
+    overflow: auto;
+    max-height : 200px;
+    border-radius : 10px;
+    
+
+}
+
+.styleText{
+    text-align : center;
+    font-weight : bold;
+    color : whitesmoke;
+    background-color: gray;
+    border : 1px solid whitesmoke;
+}
+
+.header{
+    text-align : center;
+    font-weight : bolder;
+    font-size : 20px;
+}

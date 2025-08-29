@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <p class="header">Picklist Value Generator</p>
+        <blockquote>
+            <lightning-input label="Object Name" onchange={captureObjectName}></lightning-input>
+            <template lwc:if={showCombobox}>
+                <lightning-combobox options={fieldApiName} label="Picklist Fields"
+                    onchange={picklistHandler}></lightning-combobox>
+            </template>
+            <template lwc:if={showValues}>
+                <div class="container">
+                    <template for:each={values} for:item="value">
+                        <p key={value} class="styleText">{value}</p>
+                    </template>
+                </div>
+            </template>
+        </blockquote>
+    </lightning-card>
+</template>
